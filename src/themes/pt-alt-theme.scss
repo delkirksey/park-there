@@ -1,0 +1,9 @@
+$pt-alt-primary: mat-palette($mat-purple);
+$pt-alt-accent: mat-palette($mat-blue-grey);
+$pt-alt-warn: mat-palette($mat-amber);
+
+$pt-alt-theme: mat-dark-theme(
+    $pt-alt-primary,
+    $pt-alt-accent,
+    $pt-alt-warn
+);

@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+// theming (below) can be used to apply a custom theme across the entire app
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+@import './themes/pt-theme.scss';
+@import './themes/pt-alt-theme.scss';
+
+.pt-theme {
+  @include angular-material-theme($pt-theme);
+}
+
+.pt-alt-theme {
+  @include angular-material-theme($pt-alt-theme);
+}
